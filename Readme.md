@@ -32,3 +32,9 @@ This is a backend project built using Go, PostgreSQL, and Redis. It allows users
 ## Note
 
 Files are stored locally under `/uploads`. Redis is used for caching metadata and the system includes a cleanup goroutine that deletes expired files every few minutes.
+
+## Testing
+
+A basic test is added under `internal/auth/handler_test.go` to check the `/register` endpoint.  
+It uses Go’s standard `httptest` library and just verifies response code for a simple POST request.  
+This is added to show that the project supports basic API testing.
